@@ -27,6 +27,8 @@ workflows:
           orb-name: "hubci/sphere"
           orb-path: "orb.yml"
           alpha-version-ref: "dev:int-testing"
+          attach-workspace: false;
+          checkout: true
           requires:
             - orb-tools/lint
           context:
